@@ -1,4 +1,4 @@
-// Retrieve KPU Coordinates on Map
+// Global data type to retrieve KPU Coordinates on Map
 
 const kpuLibraryCoord = { lat: 49.1334, lng: -122.8900};
 
@@ -29,7 +29,6 @@ const kpuLibraryCoord = { lat: 49.1334, lng: -122.8900};
             }).addTo(map);
 
 
-
             if(navigator.geolocation) {
                 navigator.geolocation.getCurrentPosition(position => {
 
@@ -54,15 +53,12 @@ const kpuLibraryCoord = { lat: 49.1334, lng: -122.8900};
 
                     document.getElementById('distance').innerText = `Distance to KPU Surrey Library: ${distance.toFixed(2)} km`;
 
-
-                    
-
                 });
             } 
             
             else {
 
-                alert("Geolocation is not supported, choose different browser.");
+                alert("Geolocation is not supported, choose a different browser.");
 
             }
 
