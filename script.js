@@ -1,7 +1,7 @@
 // Global data type to retrieve KPU Coordinates on Map
 
-const kpuLibraryCoord = { lat: 49.13302466185951, lng: -122.87147855074468};
- 
+const kpuLibraryCoord = { lat: 49.13280002354691, lng: -122.87165021211061};
+
 // Create a function to track distance 
         function calcDistance(lat1, lon1, lat2, lon2){
 
